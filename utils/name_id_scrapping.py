@@ -1,5 +1,9 @@
+from pathlib import Path
+
 def name_id_scrapping():
-    with open('/home/abennetot/Dataviz_Sorare/interactive/name_id_understat.txt') as f:
+    user_path = Path.cwd()
+    complete_path = str(user_path.parent) +"/data/name_id_understat.txt"
+    with open(complete_path) as f:
         lines = f.readlines()
         text = lines[0]
         text = text.replace("\'", "")
@@ -15,6 +19,3 @@ def name_id_scrapping():
     return dict_id_name
 
 dict_id_name = name_id_scrapping()
-
-
-
