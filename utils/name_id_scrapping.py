@@ -2,7 +2,7 @@ from pathlib import Path
 
 def name_id_scrapping():
     user_path = Path.cwd()
-    complete_path = str(user_path.parent) +"/data/name_id_understat.txt"
+    complete_path = str(user_path) +"/data/name_id_understat.txt"
     with open(complete_path) as f:
         lines = f.readlines()
         text = lines[0]
