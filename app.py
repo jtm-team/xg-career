@@ -1,13 +1,6 @@
 import streamlit as st
-import pandas as pd
-import base64
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-import requests
-from bs4 import BeautifulSoup
-from plot import plot_xg
-from name_id_scrapping import name_id_scrapping
+from utils.plot import plot_xg
+from utils.name_id_scrapping import name_id_scrapping
 
 dict_id_name = name_id_scrapping()
 reversed_dict_id_name = dict((v, k) for k, v in dict_id_name.items())

@@ -1,15 +1,7 @@
-from data_scrapping import scrap_xg
-import numpy as np
-import pandas as pd
-import math
-import matplotlib.image as image
-from matplotlib import artist
-import matplotlib.patches as mpatches
+from utils.data_scrapping import scrap_xg
 import matplotlib
 from matplotlib import pyplot as plt
-import matplotlib.image as mpimg
 from matplotlib import rcParams
-from matplotlib.patches import Arc
 rcParams['font.family'] = 'DejaVu Sans'
 rcParams['font.sans-serif'] = ['Franklin Gothic Medium', 'Franklin Gothic Book']
 
@@ -68,7 +60,7 @@ def plot_xg(index = 3423):
 
 
 
-    plt.show()
+    #plt.show()
 
     return fig
 
